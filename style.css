@@ -1,0 +1,123 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    overflow-x: hidden;
+}
+
+body{
+    background: url(./images/bg-jogja.svg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main{
+    position: relative;
+    opacity: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out, filter 2s eas;
+    -moz-transition: opacity 2s ease-in-out, filter 2s eas;
+    -ms-transition: opacity 2s ease-in-out, filter 2s eas;
+    -o-transition: opacity 2s ease-in-out, filter 2s eas;
+    -webkit-filter: blur(10px);
+}
+
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header > img{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    padding: 16px 16px;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    box-shadow: rgb(28, 32, 93 / 24%) 0px 2px 8px 0px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: 999;
+}
+
+header > h1 {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: #000a;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border: 1px solid #fff0;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+ul{
+
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 480px;
+}
+
+ul > li {
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    border-radius: 10cm;
+    padding: 1em;
+    margin: 1.4em;
+    box-shadow: rgb(28, 32, 93 / 24%) 0px 2px 8px 0px;
+    -webkit-border-radius: 10cm;
+    -moz-border-radius: 10cm;
+    -ms-border-radius: 10cm;
+    -o-border-radius: 10cm;
+}
+
+ul > li > a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    z-index: 999;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+    /* margin-top: -20px; */
+    color: black;
+    font-weight: 600;
+}
+
+#vanta{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+}
